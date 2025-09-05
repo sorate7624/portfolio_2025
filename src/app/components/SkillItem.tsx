@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import styles from "../app/scss/module/Main.module.scss";
+import styles from "scss/module/Main.module.scss";
 import useHoverBurst from "@/app/hooks/useHoverBurst";
 
 type Skill = { name: string; image: string };

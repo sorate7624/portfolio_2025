@@ -11,7 +11,7 @@ import { links } from "@/app/constants/links";
 import { experience } from "@/app/constants/experience";
 import { TypeAnimation } from "react-type-animation";
 import { Tooltip } from "react-tooltip";
-import SkillItem from "@/components/SkillItem";
+import SkillItem from "components/SkillItem";
 import styles from "../scss/module/Main.module.scss";
 import { motion } from "motion/react";
 import type * as Mojs from "@mojs/core";
