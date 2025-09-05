@@ -1,0 +1,95 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+@use "sass:selector";
+@use "sass:string";
+
+@function merge-map($default, $map) {
+  @return if(meta.type-of($map) == map, map.merge($default, $map), $default);
+}
+
+@function pad-start($value, $length: 2) {
+  $return: #{$value};
+  @while string.length($return) < $length {
+    $return: "0" + $return;
+  }
+  @return $return;
+}
+
+@function get-background-property($background, $options: ()) {
+  $length: list.length($background);
+  $property: (
+    "color": false,
+    "image": false,
+    "options": false,
+    "property": "",
+  );
+  $property-map: ();
+  $color: false;
+  $image: false;
+  @if $length == 1 {
+    @if meta.type-of(list.nth($background, 1)) == color {
+      $color: list.nth($background, 1);
+    } @else {
+      $image: list.nth($background, 1);
+    }
+  } @else {
+    $color: list.nth($background, 1);
+    $image: list.nth($background, 2);
+  }
+  @if $color != false {
+    $property: map.set($property, "color", $color);
+    $property-map: list.append($property-map, $color);
+  }
+  @if $image != false {
+    $property: map.set($property, "image", $image);
+    $property-map: list.append($property-map, url($image));
+  }
+  @if list.length($options) > 0 {
+    $property: map.set($property, "options", $options);
+    $property-map: list.append($property-map, $options);
+  }
+
+  $property: map.set($property, "property", $property-map);
+  @return $property;
+}
+
+@function round-float($value, $round: 1) {
+  $div: math.pow(10, $round);
+  @return calc(math.round($value * $div) / $div);
+}
+
+@function strip-unit($number) {
+  @if meta.type-of($number) == "number" and not math.is-unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+  @return $number;
+}
+
+@function add-px($value) {
+  @if meta.type-of($value) == "number" and math.is-unitless($value) {
+    @return #{$value}px;
+  } @else {
+    @return $value;
+  }
+}
+
+@function remove-var-prefix($var) {
+  @if string.slice($var, 1, 2) == "--" {
+    @return string.slice($var, 3);
+  }
+  @return $var;
+}
+
+@function module-var-name($key) {
+  @return #{var-to-hex($key)};
+}
+
+@function module-var($key, $default-value: false) {
+  @if $default-value {
+    @return var(module-var-name($key), $default-value);
+  }
+  @return var(module-var-name($key));
+}

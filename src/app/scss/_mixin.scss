@@ -1,0 +1,227 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+@use "sass:selector";
+@use "sass:string";
+
+@use "scss/function.scss" as *;
+
+@mixin module-var($args...) {
+  $binds: list.nth($args, 1);
+  @if meta.type-of($binds) == map {
+    @each $key, $value in $binds {
+      $key: remove-var-prefix($key);
+      @if meta.type-of($value) == list {
+        @include module-var(--bind-#{$key}, list.nth($value, 1));
+      }
+    }
+    @each $key, $value in $binds {
+      $key: remove-var-prefix($key);
+      @if meta.type-of($value) == list {
+        @include module-var($key, module-var(--bind-#{$key}, list.nth($value, 2)));
+      } @else {
+        @include module-var($key, $value);
+      }
+    }
+  } @else {
+    $key: list.nth($args, 1);
+    $value: list.nth($args, 2);
+    #{module-var-name($key)}: #{$value};
+  }
+}
+
+@mixin locale($locale) {
+  .#{$locale} & {
+    @content;
+  }
+}
+
+@mixin floating($top: false, $left: false) {
+  @if $top != false {
+    @include module-var(
+      (
+        --top: #{add-px($top)},
+      )
+    );
+  }
+  @if $left != false {
+    @include module-var(
+      (
+        --left: #{add-px($left)},
+      )
+    );
+  }
+}
+
+@mixin text-hidden($overflow: true) {
+  @if $overflow == true {
+    overflow: hidden !important;
+    text-indent: -10000em !important;
+  } @else {
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+@mixin absolute-full {
+  position: absolute;
+  inset: 0;
+}
+
+@mixin image-width($path) {
+  width: map.get(get-image-data($path), "width");
+}
+
+@mixin image-height($path) {
+  height: map.get(get-image-data($path), "height");
+}
+
+@mixin image-size($path, $overload: ()) {
+  $image-data: get-image-data($path);
+  @if map.get($overload, "size") != false {
+    @if map.get($overload, "width") != false {
+      @if map.get($overload, "width") {
+        width: map.get($overload, "width");
+      } @else {
+        width: map.get($image-data, "width");
+      }
+    }
+    @if map.get($overload, "height") != false {
+      @if map.get($overload, "height") {
+        height: map.get($overload, "height");
+      } @else {
+        height: map.get($image-data, "height");
+      }
+    }
+  }
+  @content ($image-data);
+}
+
+@mixin background($background, $options: no-repeat 0 0, $overload: ()) {
+  $overload: merge-map(
+    (
+      size: false,
+    ),
+    $overload
+  );
+  $options: if($options == center, no-repeat center, $options);
+  $background-property: get-background-property($background, $options);
+  $color: map.get($background-property, "color");
+  $background-image: map.get($background-property, "image");
+  @if $options == false {
+    @if $color != false {
+      background-color: $color;
+    }
+    @if $background-image != false {
+      background-image: url($background-image);
+    }
+  } @else {
+    background: map.get($background-property, "property");
+  }
+  @include image-size($background-image, $overload) using ($image-data) {
+    @content ($image-data);
+  }
+}
+
+@mixin background-image($background) {
+  @include background(
+      $background,
+      false,
+      (
+        size: false,
+      )
+    )
+    using ($image-data) {
+    @content ($image-data);
+  }
+}
+
+@mixin background-image-hover(
+  $normal-background,
+  $hover-background,
+  $options: false,
+  $transition: true,
+  $overload: false
+) {
+  $overload: merge-map(
+    (
+      size: false,
+    ),
+    $overload
+  );
+  @include fit-background-hover(
+      $normal-background,
+      $hover-background,
+      $options,
+      $transition,
+      $overload
+    )
+    using ($image-data) {
+    @content ($image-data);
+  }
+}
+
+@mixin fit-background($background, $options: (), $overload: ()) {
+  $overload: merge-map(
+    (
+      size: true,
+    ),
+    $overload
+  );
+  @include background($background, $options, $overload) using ($image-data) {
+    @content ($image-data);
+  }
+}
+
+@mixin fit-background-center($background, $options: center 0, $overload: false) {
+  $overload: merge-map(
+    (
+      width: false,
+    ),
+    $overload
+  );
+  @include fit-background($background, $options, $overload) using ($image-data) {
+    @content ($image-data);
+  }
+}
+
+@mixin fit-background-hover(
+  $normal-background,
+  $hover-background,
+  $options: (),
+  $transition: true,
+  $overload: false
+) {
+  $overload: merge-map((), $overload);
+  $hover-background-property: get-background-property($hover-background);
+  $transition-property: background;
+  @if not $transition {
+    $transition-property: ();
+  } @else {
+    @if $transition != true {
+      $transition-property: list.append($transition-property, $transition, $separator: "comma");
+    }
+  }
+  @include fit-background($normal-background, $options, $overload) using ($image-data) {
+    @if list.length($transition-property) > 0 {
+      transition-property: $transition-property;
+    }
+    &:hover {
+      @include background-image($hover-background);
+      @content ($image-data);
+    }
+  }
+}
+
+@mixin ripple($color, $duration: 0.5s) {
+  @include module-var(
+    (
+      --ripple-color: #{$color},
+      --ripple-duration: #{$duration},
+    )
+  );
+}

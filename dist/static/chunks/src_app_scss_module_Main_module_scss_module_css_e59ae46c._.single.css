@@ -1,0 +1,205 @@
+/* [project]/src/app/scss/module/Main.module.scss.module.css [app-client] (css) */
+.Main-module-scss-module__bM8u3W__custom-swiper {
+  height: 100%;
+  padding: 0 50px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper h3 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section {
+  font-size: 40px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__intro {
+  padding-top: 50px;
+  line-height: 50px;
+  display: flex;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__intro .Main-module-scss-module__bM8u3W__profile {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__intro .Main-module-scss-module__bM8u3W__profile p {
+  margin-bottom: 30px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__skill {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__skill .Main-module-scss-module__bM8u3W__box {
+  cursor: default;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 20px);
+  height: 160px;
+  margin: 0 20px 50px 0;
+  display: flex;
+  position: relative;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__skill .Main-module-scss-module__bM8u3W__box:nth-child(4n) {
+  margin-right: 0;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__skill .Main-module-scss-module__bM8u3W__box img {
+  width: 100px;
+  height: 100px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__skill .Main-module-scss-module__bM8u3W__box span {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div {
+  box-sizing: border-box;
+  background: #ffc;
+  flex: 28%;
+  width: 400px;
+  margin: -10px 25px 0;
+  padding: 10px 20px;
+  transform: rotate(-6deg);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:nth-child(2), .Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:nth-child(6) {
+  background: #cfc;
+  position: relative;
+  top: 5px;
+  transform: rotate(4deg);
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:nth-child(3), .Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:nth-child(4) {
+  background: #ccf;
+  position: relative;
+  top: -5px;
+  transform: rotate(-3deg);
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:nth-child(-n+3) {
+  margin-bottom: 60px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:hover, .Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience div:focus {
+  z-index: 5;
+  cursor: default;
+  transition: transform .3s ease-in-out;
+  position: relative;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+  transform: scale(1.1) !important;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience ul li {
+  white-space: normal;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience ul li:last-child {
+  margin-bottom: 0;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience ul li strong {
+  font-size: 27px;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__experience ul li em {
+  -webkit-text-decoration: underline wavy red;
+  text-decoration: underline wavy red;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__link {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__link .Main-module-scss-module__bM8u3W__box {
+  background-color: #fff;
+  border: 2px solid #ccf;
+  width: calc(25% - 20px);
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__link .Main-module-scss-module__bM8u3W__box:nth-child(4n) {
+  margin-right: 0;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__link .Main-module-scss-module__bM8u3W__box:hover img {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__link .Main-module-scss-module__bM8u3W__box img {
+  border-bottom: 2px dashed #ccf;
+  width: 320px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper section.Main-module-scss-module__bM8u3W__link .Main-module-scss-module__bM8u3W__box span {
+  white-space: break-spaces;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 26px;
+  line-height: normal;
+  display: flex;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper .swiper-pagination {
+  right: 0;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper .pagination {
+  opacity: 1;
+  background: none;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: 20px 0 !important;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper .heart {
+  fill: #a0b0c0;
+  width: 70px;
+  height: 70px;
+  padding-left: 5px;
+  transition: fill .15s, transform .12s;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper .pagination:hover .heart {
+  fill: #ff2d55;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper .pagination.active .heart {
+  fill: #ff2d55;
+}
+
+.Main-module-scss-module__bM8u3W__custom-swiper .pagination.swiper-pagination-bullet-active .heart {
+  fill: #ff2d55;
+}
+
+/*# sourceMappingURL=src_app_scss_module_Main_module_scss_module_css_e59ae46c._.single.css.map*/

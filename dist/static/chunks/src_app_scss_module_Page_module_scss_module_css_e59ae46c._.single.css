@@ -1,0 +1,87 @@
+/* [project]/src/app/scss/module/Page.module.scss.module.css [app-client] (css) */
+.Page-module-scss-module__32bHyG__wrapper {
+  color: #2b3a12;
+  min-width: 1400px;
+  max-width: 2560px;
+  min-height: 100vh;
+  font-family: var(--font-dongle), sans-serif;
+  background-color: #f7b4ce;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 25px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.Page-module-scss-module__32bHyG__header {
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Page-module-scss-module__32bHyG__header .Page-module-scss-module__32bHyG__logo {
+  text-shadow: 3px 3px #2b3a12;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffe489;
+  letter-spacing: 2px;
+  font-family: bungee, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.Page-module-scss-module__32bHyG__header .Page-module-scss-module__32bHyG__home {
+  border: 12px solid #ccf;
+  border-top: none;
+  width: 35px;
+  height: 25px;
+  font-size: 0;
+  display: block;
+  position: relative;
+  top: 18px;
+  left: -10px;
+  box-shadow: 3px 3px #2b3a12;
+}
+
+.Page-module-scss-module__32bHyG__header .Page-module-scss-module__32bHyG__home:before, .Page-module-scss-module__32bHyG__header .Page-module-scss-module__32bHyG__home:after {
+  content: "";
+  width: 12px;
+  height: 40px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Page-module-scss-module__32bHyG__header .Page-module-scss-module__32bHyG__home:before {
+  background-color: #ccf;
+  left: -10px;
+  transform: rotate(45deg);
+}
+
+.Page-module-scss-module__32bHyG__header .Page-module-scss-module__32bHyG__home:after {
+  background-color: #ccf;
+  left: 10px;
+  transform: rotate(-45deg);
+  box-shadow: 3px 3px #2b3a12;
+}
+
+.Page-module-scss-module__32bHyG__main {
+  background-color: #f3fffe;
+  border-top: 60px solid #16d69e;
+  width: 1400px;
+  height: 800px;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 10px 10px 5px #000;
+}
+
+.Page-module-scss-module__32bHyG__footer {
+  text-align: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=src_app_scss_module_Page_module_scss_module_css_e59ae46c._.single.css.map*/
