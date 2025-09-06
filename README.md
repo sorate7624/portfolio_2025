@@ -6,9 +6,9 @@ Next.js를 사용한 모던UI/UX 포트폴리오입니다.
 
 ### demo
 
-[https://sorate7624.github.io/portfolio-2025/](https://sorate7624.github.io/portfolio-2025/)
+[https://portfolio-2025-theta-lyart.vercel.app/](https://portfolio-2025-theta-lyart.vercel.app/)
 
-![portfolio](./public/portfolio.png)
+![portfolio](./public/images/portfolio.png)
 
 ## 설치 방법
 
