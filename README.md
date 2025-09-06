@@ -6,7 +6,7 @@ Next.js를 사용한 모던UI/UX 포트폴리오입니다.
 
 ### demo
 
-[https://sorate7624.github.io/portfolio_2025/](https://sorate7624.github.io/portfolio_2025/)
+[https://sorate7624.github.io/portfolio-2025/](https://sorate7624.github.io/portfolio-2025/)
 
 ![portfolio](./public/portfolio.png)
 
@@ -17,13 +17,13 @@ Next.js를 사용한 모던UI/UX 포트폴리오입니다.
 1. 프로젝트를 클론합니다.
 
    ```bash
-   git clone https://github.com/sorate7624/portfolio_2025.git
+   git clone https://github.com/sorate7624/portfolio-2025.git
    ```
 
 2. 프로젝트 디렉토리로 이동합니다.
 
    ```bash
-   cd portfolio_2025
+   cd portfolio-2025
    ```
 
 3. 종속성을 설치합니다.
@@ -95,7 +95,7 @@ Next.js를 사용한 모던UI/UX 포트폴리오입니다.
 
 ## 기여 방법
 
-1. (<https://github.com/sorate7624/portfolio_2025/fork>)을 포크합니다.
+1. (<https://github.com/sorate7624/portfolio-2025/fork>)을 포크합니다.
 2. (`git checkout -b feature/fooBar`) 명령어로 새 브랜치를 만드세요.
 3. (`git commit -am 'Add some fooBar'`) 명령어로 커밋하세요.
 4. (`git push origin feature/fooBar`) 명령어로 브랜치에 푸시하세요.
