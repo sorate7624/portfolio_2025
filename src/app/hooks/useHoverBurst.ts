@@ -29,14 +29,14 @@ export default function useHoverBurst(index: number) {
     async function initMojs() {
       const mojs =
         (await import("@mojs/core")).default || (await import("@mojs/core"));
-      const itemDim = element.getBoundingClientRect();
 
       const handleMouseEnter = () => {
+        const itemDim = element.getBoundingClientRect();
         const chosenShape = Math.floor(Math.random() * shapes.length);
         const chosenColor = colors[index % colors.length];
 
         const centerX = itemDim.left + itemDim.width / 2 + window.scrollX;
-        const centerY = itemDim.top + itemDim.height / 2 + window.scrollY - 750;
+        const centerY = itemDim.top + itemDim.height / 2 + window.scrollY - 20;
 
         const burstInstance = new mojs.Burst({
           left: centerX,

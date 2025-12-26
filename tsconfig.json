@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -19,14 +23,30 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "components/*": ["./src/app/components/*"],
-      "config/*": ["./src/app/config/*"],
-      "hooks/*": ["./src/app/hooks/*"],
-      "modules/*": ["./src/app/modules/*"],
-      "scss/*": ["./src/app/scss/*"],
-      "store/*": ["./src/app/store/*"],
-      "types/*": ["./src/app/types/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "components/*": [
+        "./src/app/components/*"
+      ],
+      "config/*": [
+        "./src/app/config/*"
+      ],
+      "hooks/*": [
+        "./src/app/hooks/*"
+      ],
+      "modules/*": [
+        "./src/app/modules/*"
+      ],
+      "scss/*": [
+        "./src/app/scss/*"
+      ],
+      "store/*": [
+        "./src/app/store/*"
+      ],
+      "types/*": [
+        "./src/app/types/*"
+      ]
     }
   },
   "include": [
@@ -35,7 +55,11 @@
     ".next/types/**/*.ts",
     "next-env.d.ts",
     "dist/types/**/*.ts",
-    "**/types/**/*.d.ts"
+    "**/types/**/*.d.ts",
+    "dist/dev/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

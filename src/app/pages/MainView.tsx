@@ -9,11 +9,14 @@ import Image from "next/image";
 import { skills } from "@/app/constants/skills";
 import { links } from "@/app/constants/links";
 import { experience } from "@/app/constants/experience";
+import { timeline } from "@/app/constants/timeline";
+import { plans } from "@/app/constants/plans";
 import { TypeAnimation } from "react-type-animation";
 import { Tooltip } from "react-tooltip";
 import SkillItem from "components/SkillItem";
 import styles from "../scss/module/Main.module.scss";
 import { motion } from "motion/react";
+import { Timeline, TimelineEvent } from "@mailtop/horizontal-timeline";
 import type * as Mojs from "@mojs/core";
 
 export default function MainView() {
@@ -104,7 +107,7 @@ export default function MainView() {
                     `취미: 게임, 여행, 러닝\n` +
                     `이메일: sorate_@naver.com\n` +
                     `깃헙: https://github.com/sorate7624\n`,
-                  20000,
+                  15000,
                   "",
                   1000,
                 ]}
@@ -201,6 +204,7 @@ export default function MainView() {
                   <Image
                     width="320"
                     height="180"
+                    style={{ width: "auto", height: "auto" }}
                     src={link.image}
                     alt={link.label}
                   />
@@ -212,6 +216,61 @@ export default function MainView() {
                 </motion.a>
               );
             })}
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h3>Timeline</h3>
+          <section className={styles["timeline"]}>
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  delay: 0.1,
+                  duration: 0.4,
+                },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <Timeline minEvents={1}>
+                {timeline.map((t) => (
+                  <TimelineEvent
+                    color={t.color}
+                    title={t.title}
+                    subtitle={t.subtitle}
+                  />
+                ))}
+              </Timeline>
+            </motion.div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h3>Plans</h3>
+          <section className={styles["plans"]}>
+            {plans.map((plan, index) => (
+              <motion.div
+                key={plan.title}
+                className={`${styles["box"]} ${`box-${index + 1}`}`}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    delay: 0.1 * index + 0.1,
+                    duration: 0.2,
+                  },
+                }}
+                viewport={{ once: false, amount: 0.5 }}
+              >
+                <h4>{plan.title}</h4>
+                <ul>
+                  {plan.description.map((desc, index) => (
+                    <li key={index}>- {desc}</li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
           </section>
         </SwiperSlide>
       </Swiper>

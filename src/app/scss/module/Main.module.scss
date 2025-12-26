@@ -149,6 +149,37 @@ $heartColor: #a0b0c0;
         }
       }
     }
+    &.timeline {
+      display: flex;
+      flex-wrap: wrap;
+      height: 550px;
+      align-items: center;
+      justify-content: center;
+    }
+    &.plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .box {
+        border: 5px dotted #ccf;
+        box-sizing: border-box;
+        width: calc(45% - 15px);
+        padding: 15px;
+        margin-right: 0;
+        line-height: 45px;
+        h4 {
+          font-weight: bold;
+          line-height: 60px;
+        }
+        &:first-child {
+          margin-right: 30px;
+        }
+        &:last-child {
+          width: 90%;
+          margin-top: 30px;
+        }
+      }
+    }
   }
 
   :global(.swiper-pagination) {

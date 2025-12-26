@@ -1,6 +1,7 @@
 $maxWidth: 2560px;
 $minWidth: 1400px;
-$backgroundColor: #f7b4ce;
+$backgroundColor: #fff5f4;
+// $backgroundColor: #fff;
 $heartColor: #fff;
 $fontColor: #2b3a12;
 $primaryColor: #76ab20;
@@ -23,6 +24,10 @@ $boxColor2: #f6aca2;
   background-color: $backgroundColor;
   font-family: var(--font-dongle), sans-serif;
   font-size: 25px;
+  background-image:
+    linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+    linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 .header {
