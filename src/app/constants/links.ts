@@ -12,12 +12,6 @@ export const links: Links[] = [
     tooltips: "html, javascript, jquery, pug, less, webpack",
   },
   {
-    label: "라테일 2025년 4분기 \n업데이트 이벤트 페이지(모바일 포함)",
-    href: "https://www.latale.com/event/2025/4q-update/",
-    image: "/images/link/latale_4q_update.png",
-    tooltips: "vue, typescript, scss, webpack, mobile",
-  },
-  {
     label: "라테일 2025년 4분기 \n메인 이벤트 페이지",
     href: "https://www.latale.com/event/2025/4q-main/",
     image: "/images/link/latale_4q_main.png",
@@ -28,6 +22,12 @@ export const links: Links[] = [
     href: "https://www.latale.com/event/2025/ultra-burning-5-1/",
     image: "/images/link/latale_ultra.png",
     tooltips: "vue, typescript, scss, private animation library, webpack",
+  },
+  {
+    label: "라테일 2026년 BGM 선택 이벤트 페이지",
+    href: "https://www.latale.com/event/2026/bgm-select",
+    image: "/images/link/latale_bgm_select.png",
+    tooltips: "vue, typescript, scss, webpack, webp",
   },
   {
     label: "[동남아]드래곤네스트\n 2025년 6월 랜딩 이벤트 페이지",

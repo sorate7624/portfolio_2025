@@ -1,15 +1,10 @@
 @use "scss/reset.scss";
 
-// @import "https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css";
-// @import "https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css";
 
 body {
   border: 0;
   background: #fff;
   padding: 0;
-  // font:
-  //   16px / 1.5 NanumGothic,
-  //   sans-serif;
   &[data-scroll="false"] {
     overflow: hidden;
   }
@@ -18,33 +13,6 @@ body {
 .hide {
   display: none;
 }
-
-// .floating {
-//   &-child {
-//     position: relative;
-//   }
-//   &,
-//   &-child > * {
-//     left: calc(50% + module-var(--left) - (module-var(--floating-base-width) / 2));
-//   }
-//   &,
-//   &-center,
-//   &-child > * {
-//     position: absolute;
-//     top: module-var(--top);
-//   }
-//   &-center,
-//   &-child > &-center {
-//     left: 50%;
-//     translate: calc(-50% + module-var(--left, 0px));
-//   }
-//   &-unset {
-//     position: unset;
-//     top: unset;
-//     left: unset;
-//     translate: unset;
-//   }
-// }
 
 .text-hidden {
   @include text-hidden(false);

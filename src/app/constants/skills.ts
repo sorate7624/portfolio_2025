@@ -37,10 +37,6 @@ export const skills: Skills[] = [
     image: "/images/skill/styled-component.png",
   },
   {
-    name: "jquery",
-    image: "/images/skill/jquery.png",
-  },
-  {
     name: "webpack",
     image: "/images/skill/webpack.png",
   },
@@ -51,5 +47,9 @@ export const skills: Skills[] = [
   {
     name: "svn",
     image: "/images/skill/svn.png",
+  },
+  {
+    name: "git",
+    image: "/images/skill/git.png",
   },
 ];

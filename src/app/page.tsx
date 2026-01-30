@@ -1,10 +1,11 @@
 import Link from "next/link";
 import styles from "./scss/module/Page.module.scss";
 import MainView from "./pages/MainView";
+import MagneticWrapper from "./components/MagneticWrapper";
 
 export default function Home() {
   return (
-    <div className={styles.wrapper}>
+    <MagneticWrapper className={styles.wrapper}>
       <header className={styles.header}>
         <h1>
           <Link className={styles.logo} href="/">
@@ -24,6 +25,6 @@ export default function Home() {
         &copy; {new Date().getFullYear()} Hyejin&apos;s portfolio. All Rights
         Reserved.
       </footer>
-    </div>
+    </MagneticWrapper>
   );
 }
