@@ -1,0 +1,27 @@
+@use "scss/reset.scss";
+
+
+body {
+  border: 0;
+  background: #fff;
+  padding: 0;
+  &[data-scroll="false"] {
+    overflow: hidden;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.text-hidden {
+  @include text-hidden(false);
+}
+
+.absolute-full {
+  @include absolute-full;
+}
+
+.screen {
+  mix-blend-mode: screen;
+}
