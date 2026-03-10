@@ -8,10 +8,16 @@ $heartColor: #a0b0c0;
     font-size: 80px;
     font-weight: bold;
     line-height: 90px;
+<<<<<<< HEAD
     font-family: var(--font-dongle), sans-serif;
   }
   section {
     font-size: 28px;
+=======
+  }
+  section {
+    font-size: 40px;
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
     &.intro {
       line-height: 50px;
       padding-top: 50px;
@@ -56,7 +62,10 @@ $heartColor: #a0b0c0;
       display: flex;
       flex-wrap: wrap;
       div {
+<<<<<<< HEAD
         font-size: 23px;
+=======
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
         width: 400px;
         flex: 1 1 28%;
         box-sizing: border-box;
@@ -98,14 +107,24 @@ $heartColor: #a0b0c0;
       }
       ul {
         li {
+<<<<<<< HEAD
           font-size: 20px;
           margin-bottom: 5px;
+=======
+          font-size: 24px;
+          margin-bottom: 15px;
+          line-height: 26px;
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
           white-space: normal;
           &:last-child {
             margin-bottom: 0;
           }
           strong {
+<<<<<<< HEAD
             font-size: 20px;
+=======
+            font-size: 27px;
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
           }
           em {
             text-decoration: underline;
@@ -119,12 +138,20 @@ $heartColor: #a0b0c0;
       display: flex;
       flex-wrap: wrap;
       .box {
+<<<<<<< HEAD
         width: calc(33% - 20px);
+=======
+        width: calc(25% - 20px);
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
         margin: 0 20px 20px 0;
         background-color: #fff;
         border: 2px solid #ccf;
         overflow: hidden;
+<<<<<<< HEAD
         &:nth-child(3n) {
+=======
+        &:nth-child(4n) {
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
           margin-right: 0;
         }
         &:hover {
@@ -134,10 +161,15 @@ $heartColor: #a0b0c0;
           }
         }
         img {
+<<<<<<< HEAD
           width: 100% !important;
           aspect-ratio: 16 / 9;
           object-fit: cover;
           height: 180px !important;
+=======
+          width: 320px;
+          height: 180px;
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
           overflow: hidden;
           border-bottom: 2px dashed #ccf;
         }
@@ -151,9 +183,12 @@ $heartColor: #a0b0c0;
           text-align: center;
         }
       }
+<<<<<<< HEAD
       .custom-tooltip {
         text-align: left !important;
       }
+=======
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
     }
     &.timeline {
       display: flex;
@@ -172,8 +207,15 @@ $heartColor: #a0b0c0;
         width: calc(45% - 15px);
         padding: 15px;
         margin-right: 0;
+<<<<<<< HEAD
         h4 {
           font-weight: bold;
+=======
+        line-height: 45px;
+        h4 {
+          font-weight: bold;
+          line-height: 60px;
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
         }
         &:first-child {
           margin-right: 30px;

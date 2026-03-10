@@ -103,7 +103,11 @@ export default function MainView() {
                 }}
                 sequence={[
                   `이름: 최혜진\n` +
+<<<<<<< HEAD
                     `자기소개: 이벤트·프로모션 페이지 최적화, \n레거시 개선, 빌드 최적화 경험을 갖춘\n 프론트엔드 개발자입니다.\n\n` +
+=======
+                    `자기소개: 개발자가 되어 게임회사에서 일하며,\n지금까지 꿈꿔온 목표들을 하나씩 이루어가고 있는\n프론트엔드 개발자입니다.\n\n` +
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
                     `취미: 게임, 여행, 러닝\n` +
                     `이메일: sorate_@naver.com\n` +
                     `깃헙: https://github.com/sorate7624\n`,
@@ -134,6 +138,7 @@ export default function MainView() {
           </section>
         </SwiperSlide>
         <SwiperSlide>
+<<<<<<< HEAD
           <h3>Project</h3>
           <section className={styles["link"]}>
             {links.map((link, index) => {
@@ -177,6 +182,8 @@ export default function MainView() {
           </section>
         </SwiperSlide>
         <SwiperSlide>
+=======
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
           <h3>Experience</h3>
           <section className={styles["experience"]}>
             {experience.map((experience, index) => {
@@ -225,6 +232,46 @@ export default function MainView() {
           </section>
         </SwiperSlide>
         <SwiperSlide>
+<<<<<<< HEAD
+=======
+          <h3>Project</h3>
+          <section className={styles["link"]}>
+            {links.map((link, index) => {
+              return (
+                <motion.a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  className={`${styles["box"]} ${`link-${index + 1}`}`}
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: {
+                      delay: 0.1 * index + 0.3,
+                      duration: 0.2,
+                    },
+                  }}
+                  viewport={{ once: false, amount: 0.5 }}
+                >
+                  <Image
+                    width="320"
+                    height="180"
+                    style={{ width: "auto", height: "auto" }}
+                    src={link.image}
+                    alt={link.label}
+                  />
+                  <span>{link.label}</span>
+                  <Tooltip
+                    anchorSelect={`.link-${index + 1}`}
+                    content={link.tooltips}
+                  />
+                </motion.a>
+              );
+            })}
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
           <h3>Timeline</h3>
           <section className={styles["timeline"]}>
             <motion.div

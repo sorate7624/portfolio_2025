@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bungee, Dongle } from "next/font/google";
+<<<<<<< HEAD
 import { Noto_Sans_KR } from "next/font/google";
+=======
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
 import "scss/layout.scss";
 
 const geistSans = Geist({
@@ -25,12 +28,15 @@ const dongleFont = Dongle({
   weight: ["400", "700"],
 });
 
+<<<<<<< HEAD
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
 });
 
+=======
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: "Portfolio | Hyejin",
@@ -58,7 +64,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+<<<<<<< HEAD
         className={`${geistSans.variable} ${geistMono.variable} ${bungeeFont.variable} ${dongleFont.variable} ${notoSansKr.variable}`}
+=======
+        className={`${geistSans.variable} ${geistMono.variable} ${bungeeFont.variable} ${dongleFont.variable}`}
+>>>>>>> 98b7d2691493251daa9c5db0960b81df6e48b5bb
       >
         {children}
       </body>
