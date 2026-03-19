@@ -34,26 +34,16 @@ export const links: Links[] = [
     - 내부 애니메이션 라이브러리를 활용하여 다양한 연출 구현`,
   },
   {
-<<<<<<< HEAD
     label: "라테일 2026년 1분기 업데이트 안내 페이지",
     href: "https://www.latale.com/event/2026/1q-update/",
     image: "/images/link/latale_1q_update.png",
-=======
-    label: "라테일 2025년 4분기 업데이트 안내 페이지",
-    href: "https://www.latale.com/event/2025/4q-update/",
-    image: "/images/link/latale_4q_update.png",
->>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
     tooltips: `성과:
     - 유지보수를 효율을 위해 PC/Mobile로 분리되었던 프로젝트 통합
     - 모바일 적응형 레이아웃 구현`,
   },
   {
     label: "[동남아]드래곤네스트\n 클래식 홈페이지 및 이벤트·프로모션 페이지",
-<<<<<<< HEAD
     href: "https://seaclassic.dragonnest.com",
-=======
-    href: "https://seaclassic.dragonnest.com/main",
->>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
     image: "/images/link/cls_main.png",
     tooltips: `성과:
     - 사전예약 이벤트·프로모션 페이지 효과로 이용자 수 대폭 증가
@@ -67,19 +57,4 @@ export const links: Links[] = [
     - React 및 Vite 도입
     - Vite 기반 개발 환경 구축으로 개발 속도 단축`,
   },
-<<<<<<< HEAD
-=======
-  // {
-  //   label: "[북미]드래곤네스트\n 2025년 1월 랜딩 이벤트 페이지",
-  //   href: "https://us.dragonnest.com/news/pages/104",
-  //   image: "/images/link/na_jan.png",
-  //   tooltips: "react, typescript, styled-component, motion, vite",
-  // },
-  // {
-  //   label: "[북미]드래곤네스트\n 2025년 12월 랜딩 이벤트 페이지",
-  //   href: "https://us.dragonnest.com/news/pages/117",
-  //   image: "/images/link/na_aug.png",
-  //   tooltips: "react, typescript, styled-component, motion, vite",
-  // },
->>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
 ];
