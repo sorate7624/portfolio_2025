@@ -1,9 +1,51 @@
-$heartActiveColor: #ff2d55;
+﻿$heartActiveColor: #ff2d55;
 $heartColor: #a0b0c0;
 
 .custom-swiper {
   padding: 0 50px;
   height: 100%;
+  perspective: 3200px;
+  perspective-origin: 76% 18%;
+  transform-style: preserve-3d;
+
+  :global(.swiper-wrapper) {
+    transform-style: preserve-3d;
+  }
+
+  :global(.swiper-slide) {
+    transform-origin: right bottom;
+    backface-visibility: hidden;
+    // border-radius: 28px;
+    overflow: hidden;
+    background: #f7fffe;
+    // box-shadow:
+    //   0 38px 70px rgba(0, 0, 0, 0.16),
+    //   0 12px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  // :global(.swiper-slide-shadow-top),
+  // :global(.swiper-slide-shadow-bottom) {
+  //   border-radius: 28px;
+  // }
+
+  // :global(.swiper-slide-shadow-top) {
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(28, 23, 20, 0.28) 0%,
+  //     rgba(28, 23, 20, 0.05) 48%,
+  //     rgba(28, 23, 20, 0) 100%
+  //   );
+  // }
+
+  // :global(.swiper-slide-shadow-bottom) {
+  //   background: linear-gradient(
+  //     0deg,
+  //     rgba(28, 23, 20, 0.22) 0%,
+  //     rgba(28, 23, 20, 0.04) 52%,
+  //     rgba(28, 23, 20, 0) 100%
+  //   );
+  // }
+
   h3 {
     font-size: 80px;
     font-weight: bold;
@@ -215,3 +257,5 @@ $heartColor: #a0b0c0;
     fill: $heartActiveColor;
   }
 }
+
+

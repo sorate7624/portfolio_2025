@@ -1,4 +1,4 @@
-interface Links {
+﻿interface Links {
   label: string;
   href: string;
   image: string;

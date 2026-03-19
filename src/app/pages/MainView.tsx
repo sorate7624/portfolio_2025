@@ -1,9 +1,10 @@
-"use client";
+﻿"use client";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-creative";
 import { useEffect } from "react";
-import { Mousewheel, Pagination } from "swiper/modules";
+import { EffectCreative, Mousewheel, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { skills } from "@/app/constants/skills";
@@ -82,7 +83,30 @@ export default function MainView() {
         direction={"vertical"}
         mousewheel={true}
         spaceBetween={0}
-        modules={[Pagination, Mousewheel]}
+        modules={[Pagination, Mousewheel, EffectCreative]}
+        effect="creative"
+        creativeEffect={{
+          perspective: true,
+          limitProgress: 3,
+          prev: {
+            translate: [0, "-8%", -80],
+            rotate: [-36, 0, 0],
+            scale: 0.98,
+            opacity: 1,
+            shadow: false,
+            origin: "center top",
+          },
+          next: {
+            translate: [0, "118%", -720],
+            rotate: [58, 0, 0],
+            scale: 0.82,
+            opacity: 1,
+            shadow: false,
+            origin: "center top",
+          },
+        }}
+        speed={1250}
+        resistanceRatio={0.85}
         grabCursor={true}
         loop={false}
         keyboard={{
@@ -283,3 +307,5 @@ export default function MainView() {
     </>
   );
 }
+
+
