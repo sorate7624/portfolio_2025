@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Image from "next/image";
 import styles from "scss/module/Main.module.scss";
 import useHoverBurst from "@/app/hooks/useHoverBurst";

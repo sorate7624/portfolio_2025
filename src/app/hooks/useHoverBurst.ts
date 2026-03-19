@@ -20,27 +20,32 @@ export default function useHoverBurst(index: number) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!ref.current) {
+    const element = ref.current;
+    if (!element) {
       return;
     }
 
-    const element = ref.current;
+    let removeMouseEnter: (() => void) | undefined;
+    let isDisposed = false;
 
-    async function initMojs() {
-      const mojs =
-        (await import("@mojs/core")).default || (await import("@mojs/core"));
+    const initMojs = async () => {
+      const mojsModule = await import("@mojs/core");
+      const mojs = mojsModule.default ?? mojsModule;
+
+      if (isDisposed) {
+        return;
+      }
 
       const handleMouseEnter = () => {
-        const itemDim = element.getBoundingClientRect();
         const chosenShape = Math.floor(Math.random() * shapes.length);
         const chosenColor = colors[index % colors.length];
 
-        const centerX = itemDim.left + itemDim.width / 2 + window.scrollX;
-        const centerY = itemDim.top + itemDim.height / 2 + window.scrollY - 20;
-
         const burstInstance = new mojs.Burst({
-          left: centerX,
-          top: centerY,
+          parent: element,
+          left: "50%",
+          top: "50%",
+          x: 0,
+          y: 0,
           radiusX: 110,
           radiusY: 110,
           count: 8,
@@ -64,13 +69,17 @@ export default function useHoverBurst(index: number) {
       };
 
       element.addEventListener("mouseenter", handleMouseEnter);
-
-      return () => {
+      removeMouseEnter = () => {
         element.removeEventListener("mouseenter", handleMouseEnter);
       };
-    }
+    };
 
-    initMojs();
+    void initMojs();
+
+    return () => {
+      isDisposed = true;
+      removeMouseEnter?.();
+    };
   }, [index]);
 
   return ref;
