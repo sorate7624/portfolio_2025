@@ -1,0 +1,313 @@
+[00:00:01.089] Server  LOG     ✓ Ready in 766ms
+[00:00:08.563] Server  ERROR   ⨯ ./src/app/constants/links.ts:37:1
+Parsing ecmascript source code failed
+  35 |   },
+  36 |   {
+> 37 | <<<<<<< HEAD
+     | ^^^^^^^
+  38 |     label: "라테일 2026년 1분기 업데이트 안내 페이지",
+  39 |     href: "https://www.latale.com/event/2026/1q-update/",
+  40 |     image: "/images/link/latale_1q_update.png",
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:41:1
+Parsing ecmascript source code failed
+  39 |     href: "https://www.latale.com/event/2026/1q-update/",
+  40 |     image: "/images/link/latale_1q_update.png",
+> 41 | =======
+     | ^^^^^^^
+  42 |     label: "라테일 2025년 4분기 업데이트 안내 페이지",
+  43 |     href: "https://www.latale.com/event/2025/4q-update/",
+  44 |     image: "/images/link/latale_4q_update.png",
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:45:1
+Parsing ecmascript source code failed
+  43 |     href: "https://www.latale.com/event/2025/4q-update/",
+  44 |     image: "/images/link/latale_4q_update.png",
+> 45 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+     | ^^^^^^^
+  46 |     tooltips: `성과:
+  47 |     - 유지보수를 효율을 위해 PC/Mobile로 분리되었던 프로젝트 통합
+  48 |     - 모바일 적응형 레이아웃 구현`,
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:52:1
+Parsing ecmascript source code failed
+  50 |   {
+  51 |     label: "[동남아]드래곤네스트\n 클래식 홈페이지 및 이벤트·프로모션 페이지",
+> 52 | <<<<<<< HEAD
+     | ^^^^^^^
+  53 |     href: "https://seaclassic.dragonnest.com",
+  54 | =======
+  55 |     href: "https://seaclassic.dragonnest.com/main",
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:54:1
+Parsing ecmascript source code failed
+  52 | <<<<<<< HEAD
+  53 |     href: "https://seaclassic.dragonnest.com",
+> 54 | =======
+     | ^^^^^^^
+  55 |     href: "https://seaclassic.dragonnest.com/main",
+  56 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+  57 |     image: "/images/link/cls_main.png",
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:56:1
+Parsing ecmascript source code failed
+  54 | =======
+  55 |     href: "https://seaclassic.dragonnest.com/main",
+> 56 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+     | ^^^^^^^
+  57 |     image: "/images/link/cls_main.png",
+  58 |     tooltips: `성과:
+  59 |     - 사전예약 이벤트·프로모션 페이지 효과로 이용자 수 대폭 증가
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:70:1
+Parsing ecmascript source code failed
+  68 |     - Vite 기반 개발 환경 구축으로 개발 속도 단축`,
+  69 |   },
+> 70 | <<<<<<< HEAD
+     | ^^^^^^^
+  71 | =======
+  72 |   // {
+  73 |   //   label: "[북미]드래곤네스트\n 2025년 1월 랜딩 이벤트 페이지",
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:71:1
+Parsing ecmascript source code failed
+  69 |   },
+  70 | <<<<<<< HEAD
+> 71 | =======
+     | ^^^^^^^
+  72 |   // {
+  73 |   //   label: "[북미]드래곤네스트\n 2025년 1월 랜딩 이벤트 페이지",
+  74 |   //   href: "https://us.dragonnest.com/news/pages/104",
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/constants/links.ts:84:1
+Parsing ecmascript source code failed
+  82 |   //   tooltips: "react, typescript, styled-component, motion, vite",
+  83 |   // },
+> 84 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+     | ^^^^^^^
+  85 | ];
+  86 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:00:09.619] Browser ERROR   uncaughtError: Error: ./src/app/constants/links.ts:84:1
+Parsing ecmascript source code failed
+  82 |   //   tooltips: "react, typescript, styled-component, motion, vite",
+  83 |   // },
+> 84 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+     | ^^^^^^^
+  85 | ];
+  86 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:00:09.899] Browser ERROR   ./src/app/constants/links.ts:84:1
+Parsing ecmascript source code failed
+  82 |   //   tooltips: "react, typescript, styled-component, motion, vite",
+  83 |   // },
+> 84 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+     | ^^^^^^^
+  85 | ];
+  86 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[00:00:09.899] Browser ERROR   ./src/app/constants/links.ts:84:1
+Parsing ecmascript source code failed
+  82 |   //   tooltips: "react, typescript, styled-component, motion, vite",
+  83 |   // },
+> 84 | >>>>>>> b8bf1d688e4745b77e535b3d1d0652299f6010c1
+     | ^^^^^^^
+  85 | ];
+  86 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/constants/links.ts [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Client Component Browser]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/constants/links.ts [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Client Component SSR]
+    ./src/app/pages/MainView.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
