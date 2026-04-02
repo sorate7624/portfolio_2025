@@ -15,9 +15,9 @@ export const links: Links[] = [
     `,
   },
   {
-    label: "라테일 2026년 2월 \n메인 이벤트 페이지",
-    href: "https://www.latale.com/event/2026/feb-main/",
-    image: "/images/link/latale_feb_main.png",
+    label: "라테일 2026년 1분기 \n이벤트 페이지",
+    href: "https://www.latale.com/event/2026/1q-main/",
+    image: "/images/link/latale_1q_main.png",
     tooltips: `성과:
     - 이미지 포맷(JPG/PNG)를 WebP로 변경해 페이지 로딩 성능 개선
     (약 10배 이상 빨라짐)`,
